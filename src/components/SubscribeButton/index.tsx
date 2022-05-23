@@ -1,7 +1,11 @@
 import { subscribeText } from "./locales";
 import styles from "./styles.module.scss";
 
-const SubscribeButton = () => {
+interface SubscribeButtonProps {
+  priceId: string;
+}
+
+const SubscribeButton = (props: SubscribeButtonProps) => {
   return (
     <button type="button" className={styles.subscribeButton}>
       {subscribeText}
