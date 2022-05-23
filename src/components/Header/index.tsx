@@ -1,3 +1,4 @@
+import { SignInButton } from "../index";
 import { homeNavTitle, postsNavTitle } from "./locales";
 import styles from "./styles.module.scss";
 
@@ -11,6 +12,8 @@ const Header = () => {
           <a className={styles.active}>{homeNavTitle}</a>
           <a href="">{postsNavTitle}</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   );
