@@ -18,28 +18,23 @@ export default NextAuth({
   callbacks: {
     async signIn({ user, account, profile }) {
       const { email } = user;
-
       try {
-        await fauna
-          .query(
+        await fauna.query(
+          q.If(
+            q.Not(
+              q.Exists(q.Match(q.Index("user_by_email"), q.Casefold(email)))
+            ),
             q.Create(q.Collection("users"), {
               data: {
                 email,
               },
-            })
+            }),
+            q.Get(q.Match(q.Index("user_by_email"), q.Casefold(email)))
           )
-          .then((ret) => console.log(ret))
-          .catch((err) =>
-            console.error(
-              "Error: [%s] %s: %s",
-              err.name,
-              err.message,
-              err.errors()[0].description
-            )
-          );
-
+        );
         return true;
       } catch (error) {
+        console.log(error);
         return false;
       }
     },
