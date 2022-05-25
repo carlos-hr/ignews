@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import ActiveLink from "../ActiveLink";
 import { SignInButton } from "../index";
 import { homeNavTitle, postsNavTitle } from "./locales";
@@ -8,8 +9,9 @@ const Header = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src="/images/logo.svg" alt="ignews" />
-
+        <Link href="/">
+          <img src="/images/logo.svg" alt="ignews" />
+        </Link>
         <nav>
           <ActiveLink href="/" activeClassName={styles.active}>
             <a>{homeNavTitle}</a>
