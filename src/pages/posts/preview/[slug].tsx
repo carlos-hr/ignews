@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { getSession, signIn, useSession } from "next-auth/react";
-import { getPrismicClient } from "../../../services/prisimic";
+import { getPrismicClient } from "../../../services/prismic";
 import { RichText } from "prismic-dom";
 import Link from "next/link";
 import styles from "../../../styles/pages/post.module.scss";
