@@ -47,7 +47,7 @@ The project relies on GitHub authentication and also uses stripe in test mode to
 The application layout is available in figma:
 
 <a href="https://www.figma.com/file/wAYpXQptv8pmvHe9TGs9AA/ig.news?node-id=1%3A2">
-  <img alt="Made by carlos" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+  <img alt="Made by carlos" src="https://img.shields.io/badge/See%20Layout%20in%20-Figma-%2304D361">
 </a>
 
 ### Web
