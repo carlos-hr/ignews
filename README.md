@@ -12,14 +12,14 @@
 Summary
 =================
 <!--ts-->
-   * [About the Project](#About-the-Project)
-   * [Features](#features)
-   * [Layout](#layout)
-   * [Getting Started](#getting-started)
-     * [Requirements](#requirements)
-     * [Running the application](#running-the-application)
-   * [Technologies](#-echnologies)
-     * [WebSite](#user-content-website--react----typescript)
+   * **About the Project**
+   * **Features**
+   * **Layout**
+   * **Getting Started**
+     * **Requirements**
+     * **Running the application**
+   *  **Technologies**
+      * **WebSite**
 <!--te-->
 
 
