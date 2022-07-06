@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import { getPrismicClient } from "../../services/prisimic";
+import { getPrismicClient } from "../../services/prismic";
 import { RichText } from "prismic-dom";
 import Head from "next/head";
 import styles from "../../styles/pages/posts.module.scss";
@@ -31,12 +31,12 @@ export default function Posts({ posts }: PostsProps) {
         <div className={styles.posts}>
           {posts.map((post) => (
             <Link
+              key={post.slug}
               href={
                 session?.activeSubscription
                   ? `/posts/${post.slug}`
                   : `/posts/preview/${post.slug}`
               }
-              key={post.slug}
             >
               <a>
                 <time>{post.updatedAt}</time>
