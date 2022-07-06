@@ -12,7 +12,7 @@
 Summary
 =================
 <!--ts-->
-   * [About the Project](#about-the-project)
+   * [About the Project](#About-the-Project)
    * [Features](#features)
    * [Layout](#layout)
    * [Getting Started](#getting-started)
