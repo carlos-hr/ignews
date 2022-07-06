@@ -61,7 +61,7 @@ describe("Post page", () => {
     const getPrismicClientMocked = mocked(getPrismicClient);
 
     getPrismicClientMocked.mockReturnValueOnce({
-      getByUID: jest.fn().mockResolvedValueOnce({
+      getByUID: jest.fn().mockReturnValueOnce({
         data: {
           Title: [
             {

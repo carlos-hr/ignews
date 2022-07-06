@@ -30,7 +30,7 @@ describe("Posts page", () => {
     const getPrismicClientMocked = mocked(getPrismicClient);
 
     getPrismicClientMocked.mockReturnValueOnce({
-      query: jest.fn().mockResolvedValueOnce({
+      query: jest.fn().mockReturnValueOnce({
         results: [
           {
             uid: "fake-slug",
